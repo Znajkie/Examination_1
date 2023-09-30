@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Fira Sans";
+  src: url("./assets/fonts/Fira_Sans/FiraSans-Regular.ttf");
+  font-weight: 400;
+}
+
 body {
   display: block;
   background-color: white;
@@ -20,19 +26,82 @@ body {
   height: 34rem;
 }
 
-.eh {
+.header {
   margin-top: 2.125rem;
   width: 19.625rem;
 }
 
-/* ------------- side ----------------- */
+h1 {
+  font-weight: 900;
+  font-size: 2.8125rem;
+  line-height: 2.8125rem;
+  width: 19.625rem;
+  height: 6.3125rem;
+}
+
+.header2 > h2 {
+  font-weight: 900;
+  line-height: 2.5625rem;
+  letter-spacing: -0.02em;
+  margin-top: -1rem;
+  font-size: 3rem;
+  width: 314px;
+  height: 140px;
+  color: white;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Frank Ruhl Libre";
+}
+
+p,
+span {
+  font-family: "Fira Sans";
+}
+
+.header > p,
+span {
+  margin-top: -1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  width: 15rem;
+  height: 6.4375rem;
+}
+
+.white_span {
+  color: rgb(255, 255, 255);
+}
+
+/* main img */
+
+#family {
+  position: absolute;
+  right: 1.875rem;
+  bottom: 0;
+  width: 17rem;
+  height: 17rem;
+}
+
+/* ------------- aside ----------------- */
+
 .aside-container {
   display: flex;
   flex-direction: column;
 }
 
-.aside_1,
-.aside_2 {
+.aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,31 +109,39 @@ body {
   width: 32rem;
   height: 17rem;
 }
-.aside_1 {
-  background: #f17949;
+
+.aside:first-child {
+  background-color: #f17949;
 }
 
-.aside_2 {
-  background: #ffb939;
+.aside:last-child {
+  background-color: #ffb939;
 }
 
-.aside_1,
-.aside_2 > p {
+.aside > h3 {
+  font-weight: 900;
+  line-height: 2.5625rem;
+  letter-spacing: -0.02em;
+  margin-top: -1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.aside > p {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Fira Sans;
   font-size: 0.6875rem;
   font-weight: 700;
   line-height: 0.8125rem;
   letter-spacing: -0.02em;
   text-align: center;
 }
-/* ---------------------------- */
+
+/* Navbar */
+
 ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-
-  /* -------- Links ------ */
 }
 
 a.home:link {
@@ -79,60 +156,12 @@ a {
   font-weight: 600;
   line-height: 0.75rem;
   letter-spacing: -0.02em;
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   color: rgb(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
-/* -------- text ------- */
-
-h1 {
-  font-weight: 900;
-  font-size: 2.8125rem;
-  line-height: 2.8125rem;
-  letter-spacing: -2%;
-  width: 19.625rem;
-  height: 6.3125rem;
-  font-family: Frank Ruhl Libre;
-}
-
-.white-header {
-  color: white;
-  width: 314px;
-  height: 140px;
-  font-family: Frank Ruhl Libre;
-  font-size: 45px;
-  font-weight: 900;
-  line-height: 45px;
-  letter-spacing: -0.02em;
-}
-
-h2 {
-  font-family: Frank Ruhl Libre;
-  font-weight: 900;
-  line-height: 2.5625rem;
-  letter-spacing: -0.02em;
-  margin-top: -1rem;
-  font-size: 2rem;
-  color: white;
-  font: Frank Ruhl Libre;
-}
-
-.eh > p,
-span {
-  margin-top: -1rem;
-  font-family: Fira Sans;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  letter-spacing: 0em;
-  width: 15rem;
-  height: 6.4375rem;
-}
-
-.eh > p {
-  color: rgba(0, 0, 0, 0.8);
-}
+/* Join button style */
 
 button {
   border-radius: 2rem;
@@ -142,7 +171,6 @@ button {
   margin-top: 2rem;
   font-weight: 900;
   font-size: x-small;
-  font: Fira Sans;
   border: 10px solid transparent;
   background: #ffffff;
   color: #000000b2;
@@ -151,25 +179,9 @@ button {
   -moz-box-shadow: 2px 11px 5px -7px rgba(0, 0, 0, 0.2);
 }
 
-.white_span {
-  color: rgb(255, 255, 255);
-}
+/* section */
 
-#family {
-  position: absolute;
-  right: 1.875rem;
-  bottom: 0;
-  width: 17rem;
-  height: 17rem;
-}
-
-/* ////////////////////////// */
-
-.main2_wrapper {
-  display: flex;
-}
-
-.section_1 {
+.container_2 {
   display: flex;
   justify-content: center;
   background: #a9a19e;
@@ -177,121 +189,128 @@ button {
   height: 38.25rem;
 }
 
-.section_2 {
-  padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fab131;
-  width: 62.5rem;
-  height: 42.5rem;
+.header2 {
+  margin-top: 6.8rem;
 }
 
-.main2_1 {
-  justify-content: right;
+.button2 {
+  margin-top: 0;
+}
+
+.aside2 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 3rem;
   padding-left: 10rem;
 }
 
-.main2_1 > p {
+.aside2 > p {
   padding-top: 1.5rem;
   padding-right: 4rem;
   width: 280px;
   height: 237px;
-  font-family: Fira Sans;
   font-size: 14px;
   font-weight: 900;
   line-height: 24px;
   letter-spacing: 0em;
 }
 
-.mid-container {
-  position: relative;
-}
+/* profile background img */
 
-.img-container {
+.profile_container {
   position: absolute;
-  bottom: -10rem;
-  right: 4rem;
+  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-/* .img-container:nth-child(2) {
-   right: 12rem;
-
-} */
-
-.rectangle {
-  margin: 0.6rem;
-}
-
-/* ------------------------------------ */
-
-.overlay-container {
+.profile {
+  margin-right: 1rem;
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("./assets/Rectangle.png");
+  margin-top: -1rem;
+  background-size: 100% auto;
+  height: 300px;
+  width: 256px;
+  background-repeat: no-repeat;
 }
 
-.img-overlay-container {
+.profile:last-child {
+  margin-right: 0;
+}
+
+.text_profile {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.img_profile {
+  border-radius: 5px;
+  margin-top: -40px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  width: 13.375rem;
+  height: 8.625rem;
+  margin-left: 10%;
+}
+
+.profile:first-child .img_profile {
+  background-image: url("./assets/child.png");
+  background-color: rgba(199, 221, 234, 1);
+  background-position: center -4500%;
+  background-size: 35% auto;
+}
+.profile:nth-child(2) .img_profile {
+  background-image: url("./assets/Frame.png");
+  background-color: rgba(250, 177, 49, 1);
+  background-position: center 100%;
+  background-size: 80% auto;
+}
+.profile:last-child .img_profile {
+  background-image: url("./assets/old.png");
+  background-color: rgba(241, 121, 73, 1);
+  background-position: center -20%;
+  background-size: 50% auto;
+}
+
+/* ////////// bottom section ////////// */
+
+.container_3 {
   display: flex;
-  position: absolute;
-  z-index: 1;
-  bottom: -1rem;
-  left: 5.7rem;
-}
-
-.profile1 {
-  position: absolute;
+  position: relative;
+  margin: auto;
+  padding-top: 15rem;
   text-align: center;
-  object-fit: cover;
-  left: 1rem;
-  bottom: 5.2rem;
-  width: 14.375rem;
-  height: 7.1rem;
-  border-radius: 0, 3rem;
+  background: #fab131;
+  width: 62.5rem;
+  height: 42.5rem;
 }
 
-.profile2 {
-  object-fit: cover;
-  text-align: center;
-  position: absolute;
-  left: 19rem;
-  bottom: 5rem;
-  width: 14.375rem;
-  height: 7.35rem;
-  border-radius: 0, 3rem;
+.about {
+  margin: auto;
+  font-weight: 900;
+  line-height: 2.5625rem;
+  letter-spacing: -0.02em;
+  margin-top: -1rem;
+  font-size: 2rem;
+  width: 40%;
+  height: 140px;
+  color: white;
 }
 
-.profile3 {
-  object-fit: cover;
-  text-align: center;
-  position: absolute;
-  width: 14.75rem;
-  height: 9.375rem;
-  border-radius: 0.3rem;
-  left: 36.5rem;
-  bottom: 3rem;
-}
-
-.img1 {
-  left: rem;
-  bottom: 5.2rem;
-  border-radius: 0.3rem;
-  background: rgba(199, 221, 234, 1);
-  width: 13.75rem;
-  height: 8.6rem;
-}
-
-.img2 {
-  border-radius: 0.3rem;
-  background: rgba(250, 177, 49, 1);
-}
-
-.img3 {
-  overflow: hidden;
-  border-radius: 0.3rem;
-  text-align: center;
-  width: 13.75rem;
-  height: 8.5rem;
-  right: 10rem;
-  bottom: 1rem;
-  background: rgba(241, 121, 73, 1);
+.about > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
