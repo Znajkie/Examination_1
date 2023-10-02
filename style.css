@@ -11,6 +11,7 @@ body {
   height: 100vh;
   margin: auto;
   padding: 2rem;
+  
 }
 
 .container {
@@ -313,4 +314,81 @@ button {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+
+
+
+
+
+
+
+.lorem {
+  width: 442px;
+  height: 280px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.gridsystem {
+  display: grid;
+  grid-template-columns: 334px 334px 334px;
+  
+ 
+  
+ 
+}
+.blue-box {
+ align-items: center;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ background-color: #C7DDEA;
+ font-size: 45px;
+ font-weight: 900;
+ line-height: 1;
+
+}
+
+.white-box {
+  height: 340px;
+  display: flex;
+}
+
+.grey-box {
+ display: flex;
+ background-color: #EBEBEB;
+}
+.orange-box {
+ display: flex;
+ background-color: #F17949
+}
+
+.text {
+flex-grow: 1; 
+display: flex;
+justify-content: center; 
+align-items: center; 
+text-align: center;
+}
+
+.number {
+  padding: 10px 20px;
+  position: absolute;
+  font-weight: 900;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.lightgreyborder {
+  width: 1002px;
+  height: 68px;
+  text-align: center;
+  background-color: rgba(169, 161, 158, 1);
+  line-height: 0;
+}
+.darkbackground {
+  background: rgba(119, 117, 116, 1);
+  width: 1002px;
+  height: 340px;
 }
